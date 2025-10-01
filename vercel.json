@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/wakeup-newsletter",
+      "schedule": "55 2 * * *"
+    }
+  ]
+}
