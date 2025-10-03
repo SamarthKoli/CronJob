@@ -1,5 +1,5 @@
 // /api/wakeup-newsletter.js
-async function attemptCollectArticles(url, maxRetries = 5, delayMs = 15000) { // 15 seconds
+async function attemptCollectArticles(url, maxRetries = 20, delayMs = 60000) { // 15 seconds
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     const response = await fetch(url, { method: "POST" });
     if (response.status === 200 || response.status === 201) {
